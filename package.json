@@ -1,0 +1,23 @@
+{
+  "name": "fetch-latest-release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebritican/fetch-latest-release.git"
+  },
+  "author": "Greg Ziegan",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/thebritican/fetch-latest-release/issues"
+  },
+  "homepage": "https://github.com/thebritican/fetch-latest-release#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
