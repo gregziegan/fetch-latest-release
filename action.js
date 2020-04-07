@@ -2,7 +2,21 @@ const core = require('@actions/core')
 const github = require('@actions/github')
 const process = require('process')
 
-const [owner, repo] = process.env['GITHUB_REPOSITORY'].split('/', 2)
+const customRepo = (repoPath) => {
+  const segments = repoPath.split('/', 2)
+
+  if (segments.length < 2) {
+    core.info('Please provide a repository in the format `owner/repo`.')
+  }
+
+  return segments
+}
+
+const repoInput = core.getInput('repo_path')
+
+const [owner, repo] = repoInput
+  ? customRepo(repoInput)
+  : process.env['GITHUB_REPOSITORY'].split('/', 2)
 
 const octokit = new github.GitHub(
   core.getInput('github_token', { required: true })

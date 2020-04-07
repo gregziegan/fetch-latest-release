@@ -17,3 +17,18 @@ jobs:
         run: echo "The latest release tag is $TAG"
         env:
           TAG: ${{ steps.fetch-latest-release.outputs.tag_name }}
+  customRepoExample:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - id: fetch-latest-release
+        uses: ./
+        with:
+          github_token: ${{ github.token }}
+          repo_path: actions/runner
+
+      - name: print out latest release tag
+        run: echo "The latest release tag is $TAG"
+        env:
+          TAG: ${{ steps.fetch-latest-release.outputs.tag_name }}
