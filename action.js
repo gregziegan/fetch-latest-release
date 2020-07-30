@@ -50,6 +50,7 @@ async function run() {
   core.setOutput('name', data.name)
   core.setOutput('body', data.body)
   core.setOutput('draft', data.draft)
+  core.setOutput('prerelease', data.prerelease)
   core.setOutput('author_id', data.author.id.toString())
   core.setOutput('author_node_id', data.author.node_id)
   core.setOutput('author_url', data.author.url)
