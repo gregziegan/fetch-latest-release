@@ -22,6 +22,7 @@ A tiny GitHub action to fetch the latest GitHub release for a given repository
 - `tag_name`: The name of the release's Git tag
 - `target_commitish`: ''
 - `name`: The title of the release.
+- `name`: The description of the release.
 - `draft`: Whether or not the release is a draft
 - `author_id`: ''
 - `author_node_id`: The unique identifier for accessing this release's author in the GraphQL API
