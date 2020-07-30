@@ -48,6 +48,7 @@ async function run() {
   core.setOutput('tag_name', data.tag_name)
   core.setOutput('target_commitish', data.target_commitish)
   core.setOutput('name', data.name)
+  core.setOutput('body', data.body)
   core.setOutput('draft', data.draft)
   core.setOutput('author_id', data.author.id.toString())
   core.setOutput('author_node_id', data.author.node_id)
