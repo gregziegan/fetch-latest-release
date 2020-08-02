@@ -12,7 +12,8 @@ runs:
 inputs:
   github_token:
     description: A Github token for the repo, usually `{{ github.token }}`.
-    required: true
+    required: false
+    default: ${{ github.token }}
   repo_path:
     description: Provide a "owner/repo" string for fetching from a different repo.
     required: false
