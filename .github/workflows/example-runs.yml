@@ -10,8 +10,6 @@ jobs:
 
       - id: fetch-latest-release
         uses: ./
-        with:
-          github_token: ${{ github.token }}
 
       - name: print out latest release tag
         run: echo "The latest release tag is $TAG"

@@ -8,7 +8,7 @@ A tiny GitHub action to fetch the latest GitHub release for a given repository
 
 | Parameter           | Description                                                                                | Required | Default      |
 | ------------------- | ------------------------------------------------------------------------------------------ | -------- | ------------ |
-| `github_token`      | A Github token, usually `${{ github.token }}`.                                             | **Y**    | N/A          |
+| `github_token`      | A Github token, usually `${{ github.token }}`.                                             | N        | `${{ github.token }}`  |
 | `repo_path`         | Provide a "owner/repo" string for fetching from a different repo.                          | N        | The current repo       |
 
 ## Output
