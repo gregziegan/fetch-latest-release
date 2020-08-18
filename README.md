@@ -21,15 +21,17 @@ A tiny GitHub action to fetch the latest GitHub release for a given repository
 - `node_id`: The unique identifier for accessing this release in the GraphQL API
 - `tag_name`: The name of the release's Git tag
 - `target_commitish`: ''
-- `name`: The title of the release.
+- `name`: The title of the release
+- `body`: The description of the release
 - `draft`: Whether or not the release is a draft
+- `prerelease`: Whether or not the release is a prerelease
 - `author_id`: ''
 - `author_node_id`: The unique identifier for accessing this release's author in the GraphQL API
 - `author_url`: The REST API HTTP URL for this release's author
 - `author_login`: The username used to login.
 - `author_html_url`: The HTTP URL for this release's author
 - `author_type`: ''
-- `author_site_admin`: Whether or not this user is a site administrator.
+- `author_site_admin`: Whether or not this user is a site administrator
 
 ## Usage
 
