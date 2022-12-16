@@ -53,4 +53,3 @@ outputs:
     description: ''
   author_site_admin:
     description: Whether or not this user is a site administrator.
-
