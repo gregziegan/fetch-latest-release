@@ -6,7 +6,7 @@ branding:
   icon: tag
 
 runs:
-  using: node12
+  using: node16
   main: action.js
 
 inputs:
@@ -19,7 +19,7 @@ inputs:
     required: false
 
 outputs:
-  url: 
+  url:
     description: The HTTP URL for this release
   assets_url:
     description: The REST API HTTP URL for this release's assets
@@ -53,4 +53,3 @@ outputs:
     description: ''
   author_site_admin:
     description: Whether or not this user is a site administrator.
-  
