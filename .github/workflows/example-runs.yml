@@ -1,12 +1,14 @@
 name: Example Runs
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - id: fetch-latest-release
         uses: ./
@@ -15,10 +17,11 @@ jobs:
         run: echo "The latest release tag is $TAG"
         env:
           TAG: ${{ steps.fetch-latest-release.outputs.tag_name }}
+
   customRepoExample:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - id: fetch-latest-release
         uses: ./
